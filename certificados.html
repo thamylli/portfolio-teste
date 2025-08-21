@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Imagens</title>
+    <link rel="stylesheet" href="estilos/certificados.css">
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+<body>
+
+    <main>
+   <section class="apresentacao__certificados">
+        <h1 class="certificados__titulo">Certificados</h1>
+        
+        <div class="certificados-conteudo" >
+            <div class="certificados-sites">
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="html">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="front-end">
+                        <p>HTML e CSS</p>
+                    </div>
+                    <div class="pasta" data-galeria="javascript">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="back-end">
+                        <p>Javascript</p>
+                    </div>
+                </section>
+                
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="ia">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="back-end">
+                        <p>I.A</p>
+                    </div>
+                    
+                    <div class="pasta" data-galeria="github">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="dados">
+                        <p>Github</p>
+                    </div>
+                    
+                </section>
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="logica">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="dados">
+                        <p>Logica</p>
+                    </div>
+                    <div class="pasta" data-galeria="outros">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="outros">
+                        <p>Outros</p>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+            <div>
+                <img class="gif-certificados" src="imagens/Team Timothy and their Friends - DYYM Family.gif" alt="gif-certificados">
+            </div>
+        </div>
+        
+        <!-- Galerias flutuantes -->
+        <div id="html" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>HTML e CSS</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/HTML E CSS/responsividade e publicação.png" alt=""><span>Trabalhando com responsividade e publicação de projetos</span>
+                <img src="certificados/HTML E CSS/classes posicionamento e flexbox.png" alt=""><span>classes, posicionamento e flexbox</span>
+                <img src="certificados/HTML E CSS/cabecalho, footer, variaveis.png" alt=""><span>Cabeçalho, Foorter e Variáveis</span>
+                <img src="certificados/HTML E CSS/ambiente de desenvolvimento.png" alt=""><span>Ambiente de desenvolvimento, estrutura de arquivos e tags</span>
+            </div>
+        </div>
+
+        <div id="javascript" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Javascript</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/jS/elementos no dom.png"alt=""><span>Elementos no Dom</span>
+                <img src="certificados/jS/metodos de array.png"alt=""><span>Metodos de array</span>
+                <img src="certificados/jS/paginas dinamicas.png"alt=""><span>Páginas dinâmicas</span>
+            </div>
+        </div>
+
+        <div id="logica" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Lóica de programação</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/logica de programação/Captura de tela 2025-08-19 094729.png" alt=""><span>Praticando com desafios</span>
+                <img src="certificados/logica de programação/funções e listas.png" alt=""><span>Funções e listas</span>
+                <img src="certificados/logica de programação/programação com js.png" alt=""><span>Primeiros Contatos</span>
+            </div>
+        </div>
+        
+        <div id="github" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Github</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/git/github.png" alt=""><span>Compartilhando e colaborando com projetos</span>
+                
+            </div>
+        </div>
+
+        <div id="ia" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Inteligência Artificial</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/ia/ia.png" alt=""><span>Explorando o potencial da inteligência artificial generativa</span>
+                
+            </div>
+        </div>
+
+        <div id="outros" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Outros</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="certificados/outros/aprendendo a aprender.png" alt="outros"><span>Aprendendo a Aprender</span>
+            </div>
+        </div>
+
+        <!-- Modal para ampliar imagens -->
+        <div id="modal" class="modal">
+            <span id="fechar" class="fechar">&times;</span>
+            <img id="modal-img" class="modal-img" src="">
+        </div>
+
+   </section>
+</main>
+
+    <script src="js/certificados.js"></script>
+</body>
+</html>

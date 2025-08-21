@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+.apresentacao__portfolio {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    margin: 2%;
+    text-align: center; /* garante centralização em mobile */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.portfolio-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: solid 2px antiquewhite;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.welcome,
+.bythamy {
+    font-family: 'Rubik Scribble', cursive;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.portfolio {
+    font-family: 'Rubik Scribble', cursive;
+    font-size: 150px;
+    color: antiquewhite;
+    animation: float 3s ease-in-out infinite;
+}
+.portfolio:hover {
+    color: pink;
+    transition: color 0.3s ease-in-out;
+}
+/* 📱 Responsividade */
+@media (max-width: 1200px) {
+    .portfolio {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome,
+    .bythamy {
+        font-size: 22px;
+    }
+
+    .portfolio {
+        font-size: 70px;
+    }
+
+    .portfolio-titulo {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome,
+    .bythamy {
+        font-size: 18px;
+    }
+
+    .portfolio {
+        font-size: 45px;
+    }
+
+    .portfolio-titulo {
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
